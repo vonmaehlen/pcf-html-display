@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="vonmaehlen" constructor="HtmlDisplay" version="1.0.0" display-name-key="HtmlDisplay" description-key="Html Display description" control-type="standard">
+    <external-service-usage enabled="false" />
+
+    <property name="message"
+          display-name-key="Message"
+          description-key="Message"
+          of-type="Multiple"
+          usage="bound"
+          required="false" />
+
+    <property name="overflow"
+          display-name-key="Overflow"
+          description-key="Overflow behavior: auto, scroll, hidden, visible"
+          of-type="SingleLine.Text"
+          usage="input"
+          required="false"
+          default-value="auto" />
+
+    <property name="clearMessageAfterLoad"
+          display-name-key="Clear message after load"
+          description-key="If true, the bound message field is set to null after display so no HTML is persisted to the database"
+          of-type="TwoOptions"
+          usage="input"
+          required="false"
+          default-value="false" />
+
+    <property name="allowedTags"
+          display-name-key="Allowed HTML tags"
+          description-key="Comma-separated list of allowed HTML tags (e.g. p,br,b,i,strong,em,a,ul,ol,li,table,thead,tbody,tr,th,td). Adding 'style' is a security risk; use only with trusted content. Empty = no tags allowed."
+          of-type="SingleLine.Text"
+          usage="input"
+          required="false"
+          default-value="p,br,b,i,u,strong,em,a,ul,ol,li,table,thead,tbody,tr,th,td" />
+
+    <property name="allowedAttributes"
+          display-name-key="Allowed attributes"
+          description-key="Comma-separated list of allowed attributes (e.g. href for links). Empty = no attributes allowed."
+          of-type="SingleLine.Text"
+          usage="input"
+          required="false"
+          default-value="href" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>
