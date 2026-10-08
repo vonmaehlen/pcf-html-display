@@ -28,7 +28,7 @@
 
     <property name="allowedTags"
           display-name-key="Allowed HTML tags"
-          description-key="Comma-separated list of allowed HTML tags (e.g. p,br,b,i,strong,em,a,ul,ol,li,table,thead,tbody,tr,th,td). Adding 'style' is a security risk; use only with trusted content. Empty = no tags allowed."
+          description-key="Comma-separated list of allowed HTML tags (e.g. p,br,b,i,strong,em,a,ul,ol,li,table,thead,tbody,tr,th,td). Adding style is a security risk; use only with trusted content. Empty = no tags allowed."
           of-type="SingleLine.Text"
           usage="input"
           required="false"
