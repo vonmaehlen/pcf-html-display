@@ -11,6 +11,7 @@
     <Name>htmldisplay</Name>
     <ProjectGuid>8A4F2C1E-9B3D-4E6F-A7C8-1D2E3F4A5B6C</ProjectGuid>
     <OutputPath>$(MSBuildThisFileDirectory)out\controls</OutputPath>
+    <PcfBuildMode>production</PcfBuildMode>
   </PropertyGroup>
 
   <PropertyGroup>
